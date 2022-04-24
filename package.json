@@ -1,16 +1,25 @@
 {
   "name": "tailwind-css-starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "A starter template for very simple and small projects or static web pages with Tailwind CSS setup and configured without PostCSS or any other framework. You only need to install NPM.",
   "main": "index.js",
   "scripts": {
     "build": "tailwindcss build ./src/styles.css -o ./public/styles.css",
     "prod": "NODE_ENV=production tailwindcss build ./src/styles.css -o ./public/styles.css"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ariel Cerda",
   "license": "ISC",
-  "dependencies": {
-    "tailwindcss": "^2.0.2"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Smilesharks/qr-code.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Smilesharks/qr-code/issues"
+  },
+  "homepage": "https://github.com/Smilesharks/qr-code#readme",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.0",
+    "tailwindcss": "^3.0.24"
   }
 }

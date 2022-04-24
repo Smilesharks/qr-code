@@ -1,0 +1,36 @@
+@layer base {
+	input[type='text'],
+	input[type='password'],
+	input[type='email'],
+	input[type='number'],
+	input[type='url'],
+	input[type='date'],
+	input[type='datetime-local'],
+	input[type='month'],
+	input[type='week'],
+	input[type='time'],
+	input[type='search'],
+	input[type='tel'],
+	select,
+	select[multiple],
+	textarea {
+		@apply w-full transition duration-500 ease-in-out transform bg-white border shadow-sm text-dark-900 focus: border-dark-300 placeholder-dark-300 focus:border-orange-300 focus:bg-orange-50 focus:ring focus:ring-orange-200 focus:ring-opacity-50;
+
+		&.dark {
+			@apply w-full transition duration-500 ease-in-out transform bg-gray-800 border border-blue-200 shadow-sm placeholder-dark-600 focus: rounded-2xl focus:border-blue-500 focus:bg-dark-900 focus:ring focus:ring-blue-200 focus:ring-opacity-70;
+		}
+	}
+
+	input[type='checkbox'],
+	input[type='radio'] {
+		@apply text-orange-500 rounded-sm;
+	}
+	label {
+		@apply mb-2;
+	}
+	/* class applies to select element itself, not a wrapper element */
+	select {
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-3 w-3 bg-orange-500 text-orange-500' fill='none' viewBox='0 0 24 24' stroke='currentColor'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7' /%3E%3C/svg%3E");
+		/* background-position: 98% 50%; */
+	}
+}
